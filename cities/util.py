@@ -29,8 +29,7 @@ def geo_distance(a, b):
     a_y = radians(a.y)
     b_y = radians(b.y)
     delta_x = radians(a.x - b.x)
-    cos_x = (sin(a_y) * sin(b_y) +
-             cos(a_y) * cos(b_y) * cos(delta_x))
+    cos_x = (sin(a_y) * sin(b_y) + cos(a_y) * cos(b_y) * cos(delta_x))
     return acos(cos_x) * earth_radius_km
 
 
